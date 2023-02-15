@@ -102,11 +102,11 @@ public class Main {
     public static void task8(){
         System.out.println(" "); // пропуск строки
         System.out.println("Задача 8");
-        var workDay = 8;
-        var allStaff = 640 / workDay;
-        System.out.println("Всего работников в компании — " + allStaff + " человек");
-        var staff = 94;
-        var SumTime = 94 * workDay;
-        System.out.println("Если в компании работает " +staff+ " человек, то всего " +SumTime+ " часов работы может быть поделено между сотрудниками.");
+        var staff = 640 / 8;
+        System.out.println("Всего работников в компании — " + staff + " человек");
+        var moreStaff = 94;
+        var allStaff = 94+staff;
+        var SumTime = allStaff * 8;
+        System.out.println("Если в компании работает " +allStaff+ " человек, то всего " +SumTime+ " часов работы может быть поделено между сотрудниками.");
     }
 }
