@@ -3,11 +3,11 @@ public class Main {
         task1();    //задача ввывод данных.
         task2();    //задача на сложение.
         task3();    //задача на сообразительность.
-        task4();
-        task5();
-        task6();
-        task7();
-        task8();
+        task4();    //сложение и деление.
+        task5();    //операции с нецелым числом.
+        task6();    //операции сложения и вычитания используя имя переменной.
+        task7();    //% операция остаток от деления.
+        task8();    //общая задача с выводом sout.
     }
 
     public static void task1 () {
@@ -30,9 +30,9 @@ public class Main {
         System.out.println("cat = " + cat);
         System.out.println("paper = " + paper);
         System.out.println("2000 years later..."); // оповещение об изменении значений
-        dog += 4; // вышла подсказка, что это альтарнативное написание. Выбрал данный вариант, потому что короче и хорошо подходит для работы с одной переменной.
-        cat += 4;
-        paper += 4;
+        dog += 4; // dog = dog + 4;
+        cat += 4; // cat = cat + 4;
+        paper += 4; // paper = paper + 4;
         System.out.println("dog = " + dog);
         System.out.println("cat = " + cat);
         System.out.println("paper = " + paper);
@@ -48,9 +48,9 @@ public class Main {
         System.out.println("cat = " + cat);
         System.out.println("paper = " + paper);
         System.out.println("После рапродажи. Подсчет остатка."); // оповещение об изменении значений
-        dog -= 3.5;
-        cat -= 1.6;
-        paper -= 7639;
+        dog -= 3.5; // dog = dog - 3.5;
+        cat -= 1.6; // cat = cat - 1.6;
+        paper -= 7639; // paper = paper -
         System.out.println("dog = " + dog);
         System.out.println("cat = " + cat);
         System.out.println("paper = " + paper);
@@ -62,7 +62,7 @@ public class Main {
         System.out.println("friend = "+ friend);
         friend = friend + friend;
         System.out.println("friend = "+ friend);
-        friend /= 7;
+        friend /= 7; // friend = friend / 7;
         System.out.println("friend = "+ friend);
     }
     public static void task5(){
@@ -70,7 +70,7 @@ public class Main {
         System.out.println("Задача 5");
         var frog =3.5;
         System.out.println("frog = "+ frog);
-        frog *= 10;
+        frog *= 10; // frog = frog * 10;
         System.out.println("frog = "+ frog);
         frog /= 3.5;
         System.out.println("frog = "+ frog);
@@ -86,7 +86,7 @@ public class Main {
         System.out.println("Вес второго бойца = "+ secondFighter + " кг.");
         var sum = firstFighter + secondFighter;
         System.out.println("Вес двух бойцов = "+ sum + " кг.");
-        var dif = secondFighter - firstFighter; // тунельное решение c преднамеренным знанием что второй весит больше чем первый.
+        var dif = secondFighter - firstFighter; // тунельное решение c преднамеренным знанием что второй весит больше чем первый. лучше делать через int и if.
         System.out.println("Разница веса двух бойцов = "+ dif + " кг.");
     }
     public static void task7(){
